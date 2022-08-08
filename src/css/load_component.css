@@ -4,6 +4,8 @@
     height: 100%;
     background-color: #000;
     position: absolute;
+    top: 0px;
+    left: 0px;
     animation: container-animation 3s linear 1 forwards;
 }
 

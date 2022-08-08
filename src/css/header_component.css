@@ -1,0 +1,38 @@
+header{
+    background-color: #212121;
+    width: 100%;
+    height: 100vh;
+}
+header .header-body{
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+header .header-body .header-body-content{
+    width: 50%;
+    text-align: Justify;
+}
+header .header-body .header-body-content h1{
+    color: #FFF;
+    font-weight: bold;
+    font-size: 50px; 
+}
+header .header-body .header-body-content h2{
+    -webkit-text-stroke: 0.5px #fff;
+    color: transparent;
+    font-size: 50px; 
+}
+header .header-body .hero-image{
+    overflow-y: hidden;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+}
+header .header-body .hero-image img{
+    border-top-left-radius: 50px;
+    width: 100%;
+}

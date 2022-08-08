@@ -1,13 +1,13 @@
 h1, h2, h3, h4, h5, h6{
-    color: transparent;
-    -webkit-text-stroke: 1px black; /* width and color */
-    font-size: 50px;
+     /* width and color */
     font-family: 'Odibee Sans', cursive;
 }
-body, html {
-	position: relative;
-	height: 100%; 
-	width : 100%;  
-	margin: 0;
-    padding: 0;
+
+a, p{
+    font-family: Arial;
+}
+
+*{
+	margin: 0px;
+    padding: 0px;
 }
