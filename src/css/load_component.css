@@ -1,0 +1,87 @@
+
+.load-container{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    animation: container-animation 3s linear 1 forwards;
+}
+
+.load-container .top-box{
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: calc(50% - 100px);
+    top: calc(50% - 170px);
+    transform: rotate(45deg);
+    animation: top-animation 3s linear 1 forwards;
+}
+.load-container .left-box{
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: calc(50% - 170px);
+    top: calc(50% - 100px);
+    transform: rotate(45deg);
+    animation: left-animation 3s linear 1 forwards;  
+}
+.load-container .right-box{
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: calc(50% - 70px);
+    top: calc(50% - 100px);
+    transform: rotate(45deg);
+    animation: right-animation 3s linear 1 forwards;
+}
+.load-container .bottom-box{
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: calc(50% - 100px);
+    bottom: calc(50% - 70px);
+    transform: rotate(45deg);
+    animation: bottom-animation 3s linear 1 forwards;
+}
+
+@keyframes top-animation {
+    20%   {background-color:#fff; left:calc(50% - 100px); top: calc(50% - 170px);transform: rotate(45deg); z-index: 99;}
+    40%   {background-color:#0A2141; left:calc(50% - 100px); top: calc(50% - 300px); transform: rotate(135deg);}
+    60%   {background-color:#fff; left:calc(50% - 100px); top: calc(50% - 170px);transform: rotate(135deg);}
+    80%   {background-color:#FEA300; left:calc(50% - 100px); top: calc(50% - 300px); transform: rotate(225deg);}
+    100%   {background-color:#fff; left:calc(50% - 100px); top: calc(50% - 170px);transform: rotate(225deg); z-index: -1;}
+    
+}
+@keyframes left-animation {
+    20%   {background-color:#fff; left:calc(50% - 170px); top: calc(50% - 100px);transform: rotate(45deg); z-index: 99;}
+    40%   {background-color:#0A2141; left:calc(50% - 300px); top: calc(50% - 100px); transform: rotate(135deg);}
+    60%   {background-color:#fff; left:calc(50% - 170px); top: calc(50% - 100px);transform: rotate(135deg);}
+    80%   {background-color:#FEA300; left:calc(50% - 300px); top: calc(50% - 100px); transform: rotate(225deg);}
+    100%  {background-color:#fff; left:calc(50% - 170px); top: calc(50% - 100px);transform: rotate(225deg); z-index: -1;}
+}
+@keyframes right-animation {
+    20%   {background-color:#fff; right:calc(50% - 70px); top: calc(50% - 100px);transform: rotate(45deg); z-index: 99;}
+    40%   {background-color:#0A2141; right:calc(50% - 200px); top: calc(50% - 100px); transform: rotate(135deg);}
+    60%   {background-color:#fff; right:calc(50% - 70px); top: calc(50% - 100px);transform: rotate(135deg);}
+    80%   {background-color:#FEA300; right:calc(50% - 200px); top: calc(50% - 100px); transform: rotate(225deg);}
+    100%  {background-color:#fff; right:calc(50% - 70px); top: calc(50% - 100px);transform: rotate(225deg); z-index: -1;}
+
+}
+@keyframes bottom-animation {
+    20%   {background-color:#fff; left:calc(50% - 100px); bottom: calc(50% - 70px);transform: rotate(45deg); z-index: 99;}
+    40%   {background-color:#0A2141; left:calc(50% - 100px); bottom: calc(50% - 200px); transform: rotate(135deg);}
+    60%   {background-color:#fff; left:calc(50% - 100px); bottom: calc(50% - 70px); transform: rotate(135deg);}
+    80%   {background-color:#FEA300; left:calc(50% - 100px); bottom: calc(50% - 200px); transform: rotate(225deg);}
+    100%  {background-color:#fff; left:calc(50% - 100px); bottom: calc(50% - 70px); transform: rotate(225deg); z-index: -1;}
+}
+
+@keyframes container-animation {
+    from  {visibility: visible; z-index: 99; transition: 2s all ease;}
+    to    {visibility: hidden; z-index: -1; transition: 2s all ease;}
+    
+
+}
