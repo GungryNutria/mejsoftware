@@ -1,9 +1,9 @@
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, a{
      /* width and color */
     font-family: 'Odibee Sans', cursive;
 }
 
-a, p{
+p{
     font-family: Arial;
 }
 

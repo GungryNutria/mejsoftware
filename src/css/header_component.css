@@ -2,37 +2,123 @@ header{
     background-color: #212121;
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 header .header-body{
+    margin-top: 10%;
     overflow-y: hidden;
     position: relative;
     width: 100%;
-    height: 100%;
-    background-color: #000;
 }
 header .header-body .header-body-content{
-    width: 50%;
+    width: 60%;
     text-align: Justify;
 }
 header .header-body .header-body-content h1{
     color: #FFF;
     font-weight: bold;
-    font-size: 50px; 
+    font-size: 60px; 
 }
 header .header-body .header-body-content h2{
     -webkit-text-stroke: 0.5px #fff;
     color: transparent;
     font-size: 50px; 
 }
-header .header-body .hero-image{
-    overflow-y: hidden;
+header .header-body .header-body-content p{
+    color: #fff;
+    font-size: 20px;
+    width: 40%;
+}
+header .header-body .header-body-content .buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+    align-items: center;
+    vertical-align: middle;
+    flex-flow: wrap;
+}
+header .header-body .header-body-content .buttons .primary-button,.secundary-button{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 30px;
+    margin: 1%;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    transition: 1s all ease-in;
+    font-size: 25px;
+    width: 120px;
+    z-index: 1;
+    height: 25px;
+}
+
+
+header .header-body .header-body-content .buttons .primary-button{
+    background-color: #000;
+}
+header .header-body .header-body-content .buttons .primary-button::after,.secundary-button::after{
+    content: '';
     position: absolute;
+    z-index: -1;
+    right: 0px;
     top: 0px;
+    width: 0%;
+    height: 300px;
+    transform: rotate(45deg);
+    background-color: #0a2141;
+}
+header .header-body .header-body-content .buttons .primary-button:hover::after,.secundary-button:hover::after{
+    content: '';
+    transition: 1s all ease-in-out;
+    height: 300px;
+    width: 300px;
+}
+header .header-body .header-body-content .buttons .primary-button a,.secundary-button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header .header-body .header-body-content .buttons .primary-button .top-line, .secundary-button .top-line{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    width: 50px;
+    height: 20px;
+}
+header .header-body .header-body-content .buttons .primary-button .bottom-line,.secundary-button .bottom-line{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    width: 50px;
+    height: 20px;
+}
+header .header-body .header-body-content .buttons .secundary-button{
+    width: 10%;
+}
+header .hero-image{
+    position: absolute;
+    overflow: hidden;
+    bottom: 0px;
     right: 0px;
     width: 50%;
-    height: 100%;
+    height: 75%;
+    border-top-left-radius: 100px;
 }
-header .header-body .hero-image img{
-    border-top-left-radius: 50px;
+header .hero-image img{
+    position: relative;
+    transition: transform 4s;
     width: 100%;
+    height: 100%;
+    animation: zoom-animation 10s linear infinite;  
+}
+@keyframes zoom-animation {
+    from  {transform: scale(1.0); opacity: 1;}
+    to    {transform: scale(2.0); opacity: 0;}
 }
