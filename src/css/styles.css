@@ -6,8 +6,14 @@ h1, h2, h3, h4, h5, h6, a{
 p{
     font-family: Arial;
 }
+span{
+    font-family: 'Odibee Sans', cursive;
+}
 
 *{
 	margin: 0px;
     padding: 0px;
+}
+html{
+    background-color: #dedbd4;
 }

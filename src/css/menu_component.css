@@ -20,7 +20,7 @@
     height: 150px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
     align-content: center;
     align-items: center;
     vertical-align: middle;
@@ -28,8 +28,9 @@
     
   }
   header nav .menu{
+    text-align: center;
     margin-left: 2%;
-    width: 30%;
+    width: 50%;
     
   }
   header nav .menu ul li {
@@ -38,10 +39,7 @@
     float: left;
   }
   header nav .logo{
-    width: 30%;
-  }
-    header nav .other{
-    width: 30%;
+    width: 300px;
   }
   header nav .logo img {
     width: 150px;

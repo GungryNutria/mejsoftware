@@ -21,7 +21,4 @@
                 </li>
             </ul>
         </div>
-        <div class="other">
-
-        </div>
     </nav>
