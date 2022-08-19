@@ -11,25 +11,26 @@ header .header-body{
     width: 100%;
 }
 header .header-body .header-body-content{
-    width: 60%;
+    width: 70%;
     text-align: Justify;
 }
 header .header-body .header-body-content h1{
     color: #FFF;
     font-weight: bold;
-    font-size: 60px; 
+    font-size: 30px; 
 }
 header .header-body .header-body-content h2{
     -webkit-text-stroke: 0.5px #fff;
     color: transparent;
-    font-size: 50px; 
+    font-size: 40px; 
 }
 header .header-body .header-body-content p{
     color: #fff;
     font-size: 20px;
-    width: 40%;
+    width: 45%;
 }
 header .header-body .header-body-content .buttons{
+    
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -39,18 +40,33 @@ header .header-body .header-body-content .buttons{
     vertical-align: middle;
     flex-flow: wrap;
 }
-header .header-body .header-body-content .buttons .primary-button,.secundary-button{
+header .header-body .header-body-content .buttons .primary-button{
     cursor: pointer;
     position: relative;
     overflow: hidden;
     text-align: center;
     padding: 20px 30px;
-    margin: 1%;
+    margin: 2%;
     border-radius: 5px;
     border: 1px solid #fff;
     transition: 1s all ease-in;
-    font-size: 25px;
-    width: 120px;
+    font-size: 20px;
+    width: 100px;
+    z-index: 1;
+    height: 25px;
+}
+header .header-body .header-body-content .buttons .secundary-button{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px 30px;
+    margin: 2%;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    transition: 1s all ease-in;
+    font-size: 20px;
+    width: 100px;
     z-index: 1;
     height: 25px;
 }
@@ -78,6 +94,7 @@ header .header-body .header-body-content .buttons .primary-button:hover::after,.
     width: 300px;
 }
 header .header-body .header-body-content .buttons .primary-button a,.secundary-button a{
+    width: 100%;
     text-decoration: none;
     color: #fff;
 }
@@ -99,9 +116,6 @@ header .header-body .header-body-content .buttons .primary-button .bottom-line,.
     border-left: 2px solid #fff;
     width: 50px;
     height: 20px;
-}
-header .header-body .header-body-content .buttons .secundary-button{
-    width: 10%;
 }
 header .hero-image{
     position: absolute;
