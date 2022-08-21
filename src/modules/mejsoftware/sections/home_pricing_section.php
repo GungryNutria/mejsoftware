@@ -10,7 +10,11 @@
                     <h2>$15,000</h2>
                 </div>
                 <div class="pricing-body">
-
+                    <div class="pricing-concept"></div>
+                    <div class="pricing-concept"></div>
+                    <div class="pricing-concept"></div>
+                    <div class="pricing-concept"></div>
+                    <div class="pricing-concept"></div>
                 </div>
             </div>
             <div class="pricing-box">
@@ -18,6 +22,13 @@
                     <h1>StartUp</h1>
                     <br>
                     <h2>$20,000</h2>
+                </div>
+                <div class="pricing-body">
+                    <div class="pricing-concept"></div>
+                    <div class="pricing-concept"></div>
+                    <div class="pricing-concept"></div>
+                    <div class="pricing-concept"></div>
+                    <div class="pricing-concept"></div>
                 </div>
             </div>
             <div class="pricing-box">
@@ -27,7 +38,11 @@
                     <h2>$25,000</h2>
                 </div>
                 <div class="pricing-body">
-                    
+                    <div class="pricing-concept"></div>
+                    <div class="pricing-concept"></div>
+                    <div class="pricing-concept"></div>
+                    <div class="pricing-concept"></div>
+                    <div class="pricing-concept"></div>
                 </div>
             </div>
         </div>
