@@ -1,24 +1,7 @@
-h1, h2, h3, h4, h5, h6, a{
-     /* width and color */
-     font-family: 'Source Code Pro', monospace;
-}
-
-p{
-    font-family: 'Source Code Pro', monospace;
-}
-span{
-    font-family: 'Source Code Pro', monospace;
-    color: #fea300;
-    font-size: 20px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #fea300;
-}
-
-
-*{
-	margin: 0px;
+* {
+    margin: 0px;
     padding: 0px;
-}
-html{
-    background-color: #dedbd4;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }

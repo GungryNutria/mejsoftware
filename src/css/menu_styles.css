@@ -1,0 +1,53 @@
+.menu_container {
+    display: flex;
+    width: 100%;
+    top: 20px;
+    position: absolute;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.secciones {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    align-items: center;
+}
+
+.secciones a {
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    transition: all .5s ease-in;
+}
+
+.secciones a:hover {
+    color: #fea304;
+    transition: all .5s ease-in;
+}
+
+@keyframes MenuAbajo {
+    from {
+        top: -100px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #001f367a;
+    box-shadow: 0px 0px 8px black;
+    animation: MenuAbajo .3s;
+}
+
+.fixed a {
+    color: #e8f2ff;
+}

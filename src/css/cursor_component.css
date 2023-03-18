@@ -1,9 +1,0 @@
-.circle {
-	position: absolute;
-    border: solid 2px #000;
-	width: 20px; 
-	height: 20px;
-	padding-bottom: 0px;
-    border-radius: 50%;
-	z-index: 99;
-}
